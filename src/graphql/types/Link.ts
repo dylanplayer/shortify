@@ -1,6 +1,7 @@
 // /graphql/types/Link.ts
 import { nanoid } from "nanoid";
 import { builder } from "../builder";
+import prisma from "@/lib/prisma";
 
 builder.prismaObject('Link', {
   fields: (t) => ({
