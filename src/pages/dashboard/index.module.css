@@ -1,0 +1,153 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 25px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 720px;
+  padding: 25px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px 25px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #0ea5e9;
+  color: #ffffff;
+
+  font-weight: 600;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #94a3b8;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 25px;
+}
+
+.linksHeader {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 7px 25px;
+}
+
+.linkSlugHeader, .linkUrlHeader {
+  font-size: 1.2rem;
+}
+
+.linkSlugHeader, .linkSlug {
+  text-align: left;
+}
+
+.linkUrlHeader, .linkUrl {
+  text-align: right;
+}
+
+.link {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 7px 25px;
+
+  border: none;
+  border-radius: 5px;
+
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.linkUrl, .linkSlug {
+  color: #0ea5e9;
+  overflow-wrap: break-word;
+  width: 50%;
+}
+
+.newLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  width: 100%;
+  padding: 25px;
+}
+
+.newLinkInput {
+  width: 100%;
+  padding: 7px 25px;
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+
+  color: #1e293b;
+}
+
+.newLinkButton {
+  width: 100%;
+  padding: 7px 25px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #0ea5e9;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+
+  cursor: pointer;
+}
