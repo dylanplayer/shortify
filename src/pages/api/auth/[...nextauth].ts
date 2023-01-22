@@ -1,7 +1,7 @@
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import NextAuth, { AuthOptions, Session } from "next-auth"
 import Auth0Provider from "next-auth/providers/auth0";
-import prisma from "../../../lib/prisma";
+import prisma from "@/lib/prisma";
 import { JWT } from "next-auth/jwt";
 
 export const authOptions: AuthOptions = {

@@ -24,7 +24,7 @@ export default function Home() {
         <title>Shortify</title>
         <meta name="description" content="Make your links into short bois" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://dylanplayer.com/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <header className={styles.header}>
