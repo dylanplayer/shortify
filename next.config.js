@@ -4,6 +4,6 @@ const nextConfig = {
   async rewrites() {
     return [{ source: "/s/:path*", destination: "/api/s/:path*" }];
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

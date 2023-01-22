@@ -13,8 +13,8 @@ export const builder = new SchemaBuilder<{
   relayOptions: {},
   prisma: {
     client: prisma,
-  }
-})
+  },
+});
 
 builder.queryType({
   fields: (t) => ({

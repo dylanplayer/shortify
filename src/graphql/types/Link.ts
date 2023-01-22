@@ -1,4 +1,3 @@
-// /graphql/types/Link.ts
 import { nanoid } from "nanoid";
 import { builder } from "../builder";
 import prisma from "@/lib/prisma";
@@ -9,7 +8,7 @@ builder.prismaObject('Link', {
     url: t.exposeString('url'),
     slug: t.exposeString('slug'),
     user: t.relation('user'),
-  })
+  }),
 });
 
 builder.queryField("links", (t) =>
@@ -20,19 +19,19 @@ builder.queryField("links", (t) =>
       const {user} = await ctx;
 
       if (!user?.id) {
-        throw new Error("You have to be logged in to perform this action")
+        throw new Error("You have to be logged in to perform this action");
       }
       
       return prisma.link.findMany({ ...query,
         where: {
           user: {
             id: user.id,
-          }
-        }
-      })
-    }
+          },
+        },
+      });
+    },
   })
-)
+);
 
 builder.mutationField("createLink", (t) =>
   t.prismaField({
@@ -41,12 +40,12 @@ builder.mutationField("createLink", (t) =>
       url: t.arg.string({ required: true }),
     },
     resolve: async (query, _parent, args, ctx) => {
-      const { url } = args
+      const { url } = args;
 
       const {user} = await ctx;
 
       if (!user?.id) {
-        throw new Error("You have to be logged in to perform this action")
+        throw new Error("You have to be logged in to perform this action");
       }
 
       const slug = nanoid(10);
@@ -59,10 +58,10 @@ builder.mutationField("createLink", (t) =>
           user: {
             connect: {
               id: user.id,
-            }
-          }
-        }
-      })
-    }
+            },
+          },
+        },
+      });
+    },
   })
 );

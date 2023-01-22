@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import styles from './index.module.css';
 import { signIn } from 'next-auth/react';
 import { NextApiRequest, NextApiResponse } from 'next/types';
@@ -34,5 +34,5 @@ export default function Home() {
         <button className={styles.button} onClick={() => signIn('auth0')}>Get Started</button>
       </main>
     </>
-  )
+  );
 }

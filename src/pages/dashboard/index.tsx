@@ -50,7 +50,7 @@ export async function getServerSideProps({req, res}: {req: NextApiRequest, res: 
         destination: '/',
       },
       props: {},
-    }
+    };
   }
 
   return {
